@@ -11,7 +11,7 @@ import {
   List,
   ListItemIcon,
 } from "@mui/material";
-// import Header from "../../common/views/Header";
+import Header from "../components/Header";
 import RadioButtonCheckedIcon from "@mui/icons-material/RadioButtonChecked";
 import Loader from "../components/Loader";
 import ErrorPage from "./ErrorPage";
@@ -41,7 +41,7 @@ const DetailsPage = () => {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Container maxWidth="lg" data-testid="details-page">
         <Card>
           <CardMedia

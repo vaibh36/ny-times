@@ -47,7 +47,7 @@ describe("Homepage", () => {
     render(<Homepage />);
 
     await waitFor(() => {
-      expect(screen.getByText("Articles")).toBeInTheDocument();
+      expect(screen.getByText("New York Articles")).toBeInTheDocument();
       expect(screen.getAllByRole("heading")).toHaveLength(3); // Assuming each article has a title
     });
   });
