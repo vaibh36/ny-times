@@ -1,13 +1,7 @@
 import React from "react";
-import {
-  Container,
-  CardMedia,
-  Typography,
-  Grid,
-  Card,
-  CardContent,
-} from "@mui/material";
+import { CardMedia, Typography, Card, CardContent } from "@mui/material";
 import { useNavigate } from "react-router";
+import PropTypes from "prop-types";
 
 const NyTimesCard = ({ article }) => {
   const navigate = useNavigate();
@@ -51,3 +45,12 @@ const NyTimesCard = ({ article }) => {
 };
 
 export default NyTimesCard;
+
+NyTimesCard.propTypes = {
+  article: PropTypes.shape({
+    byline: PropTypes.string,
+    published_date: PropTypes.string,
+    title: PropTypes.string,
+    id: PropTypes.string,
+  }),
+};

@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Container,
-  CardMedia,
-  Typography,
-  Grid,
-  Card,
-  CardContent,
-} from "@mui/material";
-import { useNavigate } from "react-router";
+import { Container, Typography, Grid } from "@mui/material";
 import Header from "../components/Header";
 import Loader from "../components/Loader";
 import ErrorPage from "./ErrorPage";
@@ -15,8 +7,6 @@ import usePopularArticles from "../hooks/usePopularArticle";
 import NyTimesCard from "../components/NyTimeCard";
 
 const Homepage = () => {
-  const navigate = useNavigate();
-
   const { data, error } = usePopularArticles();
 
   if (error) return <ErrorPage />;
