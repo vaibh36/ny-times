@@ -36,7 +36,7 @@ const DetailsPage = () => {
     }
   }, [id, data]);
 
-  if (error) return <ErrorPage />;
+  if (error || !article) return <ErrorPage />;
   if (!data) return <Loader />;
 
   return (

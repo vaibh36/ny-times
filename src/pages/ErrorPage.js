@@ -17,7 +17,7 @@ const ErrorPage = () => {
       data-testid="error-page"
     >
       <Typography variant="h4" gutterBottom>
-        Something went wrong
+        Article Not present
       </Typography>
       <Typography variant="body1">
         {error?.statusText || error?.message}
