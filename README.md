@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+## New York Times Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Overview
 
-## Available Scripts
+This initiative is a web application that retrieves and showcases articles from the New York Times Most Popular API. Users can explore trending articles and access detailed information about each one.
 
-In the project directory, you can run:
+The following routes/pages are included in this application:
 
-### `npm start`
+1. Articles Listing Page - This page will retrieve the most popular articles from the New York Times API and display them using a grid layout.
+2. Description Page - This page will show the details of the chosen article.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Snapshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Articles Listing Page
+   ![article listing page](public/articleListing.png)
 
-### `npm test`
+1. Article Description Page
+   ![details page](public/articleDescriptionPage.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Setup Guide
 
-### `npm run build`
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   ```
+2. Change directory to the newly cloned folder:
+   ```
+   cd ny-times
+   ```
+3. Install dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   OR
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```
+   yarn
+   ```
 
-### `npm run eject`
+### Operation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To start the development server, run:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm run start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+OR
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+yarn start
+```
 
-## Learn More
+The application will run default in Port 3000. Access it via web browser at http://localhost:3000
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Technology stack
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `React v18.3`
+- `React Router v6`
+- `SWR`
+- `ESlint` for linting
+- `Prettier` for code formatting
+- `SonarQube` for code anaylsis
+- `Material UI v5`
+- `React testing library`
+- `Jest`
+- `Cypress`
 
-### Code Splitting
+### Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `start`: Start the development server.
+- `build`: Build the application for production.
+- `test`: Run tests using Jest.
+- `coverage`: Run tests with coverage report.
+- `eject`: Eject the application from Create React App.
+- `cypress`: Executes Cypress E2E tests
