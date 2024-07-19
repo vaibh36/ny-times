@@ -8,13 +8,13 @@ const NyTimesCard = ({ article }) => {
 
   return (
     <Card
-      sx={{ cursor: "pointer", minHeight: "350px" }}
+      sx={{ cursor: "pointer", height: "450px" }}
       onClick={() => navigate(`/details/${article?.id}`)}
       data-testid="article"
     >
       <CardMedia
         component="img"
-        height="300"
+        height="240"
         image={article?.media?.[0]?.["media-metadata"]?.[1]?.url}
         alt={article.title}
         data-testid="article"
