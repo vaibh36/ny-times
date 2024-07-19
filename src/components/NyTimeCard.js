@@ -14,7 +14,7 @@ const NyTimesCard = ({ article }) => {
     >
       <CardMedia
         component="img"
-        height="140"
+        height="300"
         image={article?.media?.[0]?.["media-metadata"]?.[1]?.url}
         alt={article.title}
         data-testid="article"
