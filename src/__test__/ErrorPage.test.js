@@ -26,6 +26,6 @@ describe("ErrorPage", () => {
 
     const { getByText } = render(<ErrorPage />);
 
-    expect(getByText("Something went wrong")).toBeInTheDocument();
+    expect(getByText("Article Not present")).toBeInTheDocument();
   });
 });

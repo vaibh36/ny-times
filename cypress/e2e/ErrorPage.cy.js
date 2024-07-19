@@ -4,6 +4,6 @@ describe("ErrorPage Component", () => {
   });
 
   it("displays default error message when no error is provided", () => {
-    cy.contains("Something went wrong");
+    cy.contains("Article Not present");
   });
 });

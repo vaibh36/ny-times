@@ -22,7 +22,7 @@ const DetailsPage = () => {
 
   // NOTE: Logic to fetch the data on refresh, as we don't have any seprate endpoint to get the data based on the ID
   // We can also use other data persist techniques, like redux-persist or localstorage
-  const [article, setArticle] = useState();
+  const [article, setArticle] = useState({});
 
   const { data, error } = usePopularArticles();
 
